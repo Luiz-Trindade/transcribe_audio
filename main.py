@@ -30,20 +30,20 @@ def ensure_mp3(file_path: str) -> str:
 # Função para transcrever um arquivo de áudio
 def transcribe(file_name: str):
     try:
-        model = whisper.load_model(whisper_model)
+        #model = whisper.load_model(whisper_model)
         
         file_path = os.path.join(INPUT_DIR, file_name)
         # converte se necessário
         work_path = ensure_mp3(file_path)
 
-        print(f"🎙️ Iniciando transcrição: {os.path.basename(work_path)}")
-        res = model.transcribe(work_path, fp16=False)
-
-        out_txt = os.path.splitext(os.path.basename(work_path))[0] + "_transcript.txt"
-        out_path = os.path.join(OUTPUT_DIR, out_txt)
-        with open(out_path, "w", encoding="utf-8") as f:
-            f.write(res["text"])
-        print(f"✅ Transcrição salva: {out_path}")
+#         print(f"🎙️ Iniciando transcrição: {os.path.basename(work_path)}")
+#         res = model.transcribe(work_path, fp16=False)
+# 
+#         out_txt = os.path.splitext(os.path.basename(work_path))[0] + "_transcript.txt"
+#         out_path = os.path.join(OUTPUT_DIR, out_txt)
+#         with open(out_path, "w", encoding="utf-8") as f:
+#             f.write(res["text"])
+#         print(f"✅ Transcrição salva: {out_path}")
 
     except Exception as e:
         print(f"❌ Erro em '{file_name}': {e}")

@@ -11,3 +11,7 @@ wheels/
 
 *.mp4
 *.mp3
+
+vosk-model-small-pt-0.3/
+transcricoes/
+files/

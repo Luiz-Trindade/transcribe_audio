@@ -6,4 +6,5 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "openai-whisper>=20240930",
+    "pytranscript>=0.3.0",
 ]
