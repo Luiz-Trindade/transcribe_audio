@@ -3,12 +3,14 @@
 Este projeto realiza a transcrição automática de arquivos de áudio e vídeo usando o modelo offline [Vosk](https://alphacephei.com/vosk/). Ele processa vários arquivos em paralelo, realiza conversões automáticas e gera arquivos `.txt` com as transcrições.
 
 ## 📂 Estrutura
+```bash
 .
 ├── files/                    # Diretório de entrada com arquivos de áudio/vídeo
 ├── transcricoes/            # Saída com transcrições .txt
 ├── vosk-model-small-pt-0.3/ # Modelo Vosk em português
 ├── transcribe\_vosk.py       # Script principal
 └── README.md
+```
 
 ## ✅ Funcionalidades
 
